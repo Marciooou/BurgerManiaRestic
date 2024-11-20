@@ -1,0 +1,39 @@
+/* card.component.css */
+.card {
+
+  padding: 16px;
+  text-align: center;
+  width: 300px;
+  font-family: var(--font-family);
+  border-radius: 20px;
+  margin: 0 15px;
+}
+
+.card-image {
+  width: 194px;
+  height: 155px;
+}
+
+.card:hover{
+  border: 3px solid var(--third-color);
+  border-radius: 20px;
+  transition: border-radius 3.5s;
+}
+
+.card-price {
+  font-size: 40px;
+  color: var(--secondary-color);
+  font-weight: bold;
+  margin-top: 10%;
+}
+
+h3 {
+  font-size: 30px;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+p {
+  font-size: 20px;
+  color: #000;
+}
+

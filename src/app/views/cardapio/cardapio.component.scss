@@ -1,0 +1,27 @@
+/* cardapio.component.css */
+.title {
+  color: var(--button-color);
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 6%;
+}
+
+button {
+  width: 404px;
+  height: 74px;
+}

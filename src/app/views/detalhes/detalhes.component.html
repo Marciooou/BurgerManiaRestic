@@ -1,0 +1,30 @@
+<h2 class="title">DETALHES</h2>
+
+<div class="details-container" *ngIf="produto; else notFound">
+  <!-- Card do produto -->
+  <div class="card-container">
+    <app-card
+      [title]="produto.title"
+      [description]="produto.description"
+      [imageUrl]="produto.imageUrl"
+      [price]="produto.price">
+    </app-card>
+  </div>
+
+  <!-- Descrição do produto -->
+  <div class="description-container">
+    <app-description
+      [title]="'Descrição'"
+      [text]="produto.description_text">
+    </app-description>
+  </div>
+</div>
+
+<ng-template #notFound>
+  <p>Produto não encontrado.</p>
+</ng-template>
+
+<!-- Botão de compra -->
+<div class="button-container" *ngIf="produto">
+  <app-button label="COMPRAR" type="filled" [routerLink]="['/pedido']" [queryParams]="{ produto: produto.title }"></app-button>
+</div>
